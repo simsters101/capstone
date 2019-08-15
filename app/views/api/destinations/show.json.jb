@@ -1,0 +1,10 @@
+{
+  id: @destination.id,
+  name: @destination.name,
+  continent: @destination.continent,
+  airport_code: @destination.airport_code,
+  country: @destination.country,
+  rank: @destination.rank,
+  origin_trips: @destination.origin_trips,
+  origin_trip_destinys: @destination.origin_trip_destinys
+}
