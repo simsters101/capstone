@@ -81,7 +81,7 @@ end
 #   response = HTTP.get "https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/browsequotes/v1.0/US/USD/en-US/#{destination.airport_code}-sky/anywhere/anytime?inboundpartialdate=anytime",
 #   headers: {
 #     "X-RapidAPI-Host" => "skyscanner-skyscanner-flight-search-v1.p.rapidapi.com",
-#     "X-RapidAPI-Key" => "b6d4f81b1amsh00577e4c68cf036p153821jsn8728c97b1b5b"
+#     "X-RapidAPI-Key" => ""
 #   }
 
 #   response = response.parse
