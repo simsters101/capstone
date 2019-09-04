@@ -79,17 +79,31 @@
 
 
 
+# Not sure what this is:
+
+#   response = HTTP.get "https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/browsequotes/v1.0/US/USD/en-US/#{destination.airport_code}-sky/anywhere/anytime?inboundpartialdate=anytime",
+#   headers: {
+#     "X-RapidAPI-Host" => "skyscanner-skyscanner-flight-search-v1.p.rapidapi.com",
+#     "X-RapidAPI-Key" => ""
+#   }
+
+
+
+
+
 require "http"
 
 Destination.all.each do |destination|
 
   p destination.name
 
+
   5.times do
     if destination.name[" "]
       destination.name[" "] = "+"
     end
   end
+
 
   if HTTP.get("https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=&text=#{destination.name}&sort=interestingness-desc&format=json&nojsoncallback=1")
 
