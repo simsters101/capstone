@@ -3,8 +3,10 @@
   name: @destination.name,
   continent: @destination.continent,
   airport_code: @destination.airport_code,
+  country_code: @destination.country_code,
   country: @destination.country,
   rank: @destination.rank,
+  image: @destination.image,
   origin_trips: @destination.origin_trips,
   origin_trip_destinys: @destination.origin_trip_destinys
 }

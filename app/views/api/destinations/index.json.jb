@@ -3,7 +3,9 @@
   name: destination.name,
   continent: destination.continent,
   airport_code: destination.airport_code,
+  country_code: destination.country_code,
   country: destination.country,
-  rank: destination.rank.to_i
+  rank: destination.rank.to_i,
+  image: destination.image
 }
 end

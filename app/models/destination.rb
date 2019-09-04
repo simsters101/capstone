@@ -10,7 +10,10 @@ class Destination < ApplicationRecord
   def origin_trip_destinys
     destinys = []
     origin_trips.map do |origin_trip|
-      destinys << origin_trip.destiny # unless destinys.include?(origin_trip.destiny)
+      # destinys << origin_trip
+      # destinys << origin_trip.destiny unless destinys.include?(origin_trip.destiny)
+      
+      destinys << {origin_trip: origin_trip, destiny: origin_trip.destiny} unless destinys.include?(origin_trip.destiny)
     end
     return destinys
   end
